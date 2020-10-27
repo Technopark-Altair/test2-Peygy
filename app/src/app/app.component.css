@@ -1,0 +1,39 @@
+html
+{
+    background-color: whitesmoke;
+}
+div
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.main
+{
+    display: inline-block;
+}
+input[type^="submit"]
+{
+    display: block;
+}
+
+@media screen and (min-widht: 640px)
+{
+    h1
+    {
+        font-size: 1em;
+    }
+    .main
+    {
+        display: grid;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+}
+input[type='number'] 
+{
+    -moz-appearance: textfield;
+}

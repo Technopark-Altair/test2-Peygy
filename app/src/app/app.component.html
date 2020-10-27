@@ -1,0 +1,20 @@
+<div>
+  <h1>Вычесление логических выражений</h1>
+  <div class="main">
+    <select [(ngModel)]="operatorNo">
+      <option value="!">!(Не)</option>
+      <option value=" "> </option>
+    </select>
+     ( 
+    <input [(ngModel)]="first" type="number">
+    <select [(ngModel)]="operatorMain">
+      <option value="&&">&&(И)</option>
+      <option value="||">||(Или)</option>
+    </select>
+     ) 
+    <input [(ngModel)]="second" type="number">
+  </div>
+  <input (click)="doCalc()" type="submit" value="Выполнить">
+  <p>Результат: {{result}}</p>
+  <p>Текст ошибки: {{errorMes}}</p>
+</div>
